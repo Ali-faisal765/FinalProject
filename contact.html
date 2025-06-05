@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Afoods</title>
+  <title>Contact Us - Afoods</title>
   <link rel="icon" type="logo/gif" href="images/logo/logo.gif">
 
   <link rel="stylesheet" href="cdn/slick.min.css"/>
   <link rel="stylesheet" href="cdn/slick-theme.min.css"/>
- <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-  <div id="loader">
+    <div id="loader">
   <div class="loader-inner">
     <img src="images/logo/logo.gif" alt="Loading..." />
     <p>Cooking something delicious for you...</p>
@@ -34,6 +36,7 @@
     </div>
   </div>
 
+
   <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
@@ -41,32 +44,70 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="slider-container">
-    <div class="image-slider">
-      <div><img src="images/ambiance/ambiance1.jpg" alt="Slider Image 1"></div>
-      <div><img src="images/ambiance/ambiance2.jpg" alt="Slider Image 2"></div>
-      <div><img src="images/ambiance/ambiance3.jpg" alt="Slider Image 3"></div>
-      <div><img src="images/ambiance/ambiance4.jpg" alt="Slider Image 4"></div>
-    </div>
-  </div>
 
-  <section class="about-section">
-    <div class="about-overlay">
-      <div class="about-content">
-        <h2>About Afoods</h2>
-        <p>
-          Welcome to Afoods, your ultimate destination for fast, fresh, and flavorful meals. We believe that great food should be accessible, quick, and crafted with care. From sizzling burgers and crispy fries to refreshing beverages and delightful desserts, every item on our menu is a celebration of taste and quality. Whether you're grabbing a quick lunch or planning a dinner with friends, Afoods brings you the joy of good food in a cozy ambiance.
-        </p>
-      </div>
+  <section class="contact-wrapper">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong><br>Block 4, Clifton, Karachi, Pakistan</p>
+      <p><strong>Phone:</strong><br>+92 312 1234567 | +92 310 7654321</p>
+      <p><strong>Email:</strong><br>info@afoods.com</p>
+      <p><strong>Business Hours:</strong><br>Mon – Sun: 12:00 PM – 11:00 PM</p>
+      <p>Whether you're planning a visit, have a question, or want to give feedback — we’d love to hear from you!</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
+
+    <section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">Does this restaurant accept card payment?</button>
+    <div class="faq-answer">
+      Yes, we accept all major debit and credit cards.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">What’s the most running food item here?</button>
+    <div class="faq-answer">
+      Our most popular dish is the Signature Chicken Wings and Zinger Burger.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">What’s the location?</button>
+    <div class="faq-answer">
+      We’re located at Block 4, Clifton, Karachi, Pakistan.
+    </div>
+  </div>
+</section>
+
+
+  <section class="map-section">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0737139521846!2d67.02685941499493!3d24.8672269840506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eecf6e0f9c3%3A0x24ea12bdfcc693e7!2sClifton%20Block%204%2C%20Karachi!5e0!3m2!1sen!2s!4v1684140305795!5m2!1sen!2s"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+
+
 
   <section class="footer-section">
     <div class="footer-container">
       <div class="footer-box">
         <h3>About</h3>
         <p>At Afoods, we blend fast service with unforgettable flavor. Our team is dedicated to crafting meals that satisfy your cravings while staying true to fresh and bold ingredients.</p>
-        <a href="contact.html" class="footer-btn">Contact..</a>
+        <a href="menu.html" class="footer-btn">Check Our Menu</a>
       </div>
 
       <div class="footer-box">
@@ -86,15 +127,30 @@
       <div class="footer-box">
         <h3>Contacts</h3>
         <p><strong>Location:</strong><br>Block 4, Clifton, Karachi, Pakistan</p>
-        <p><strong>Phone:</strong><br>+92 324 9221955 | +92 324 2026040</p>
+        <p><strong>Phone:</strong><br>+92 3249221955 | +92 324 2026040</p>
         <p><strong>Email:</strong><br>info@afoods.com</p>
       </div>
     </div>
-    <div id="newsletter-msg"></div>
+    <div id="newsletter-form"></div>
   </section>
 
+  
   <script src="cdn/jquery-3.6.0.min.js"></script>
   <script src="cdn/slick.min.js"></script>
   <script src="script.js"></script>
+  <script>
+     $(document).ready(function () {
+    $('.faq-question').click(function () {
+      $(this).next('.faq-answer').slideToggle();
+      $('.faq-answer').not($(this).next()).slideUp(); 
+    });
+  });
+
+
+
+  </script>
+  
+
+
 </body>
 </html>

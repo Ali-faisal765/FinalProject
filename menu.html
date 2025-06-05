@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu - Afoods</title>
+  <link rel="icon" type="image/gif" href="images/logo/logo.gif">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <div id="loader">
+  <div class="loader-inner">
+    <img src="images/logo/logo.gif" alt="Loading..." />
+    <p>Cooking something delicious for you...</p>
+  </div>
+</div>
+
+
+  <div class="header-bar">
+    <div class="header-left">
+      <button><img src="images/icons/location.png" alt="Location Icon" />Change Location</button>
+    </div>
+    <div class="logo-center">
+      <img src="images/logo/logo.gif" alt="Restaurant Logo" />
+    </div>
+    <div class="header-right">
+      <a href="tel:+923121234567">
+        <button><img src="images/icons/call.png" alt="Call Icon" />Call Now</button>
+      </a>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button id="searchButton">
+        <img src="images/icons/search.png" alt="Search Icon" width="28" height="28" />
+      </button>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" >Menu</a>
+    <a href="reserve.html">Reserve Table</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="menu-tabs">
+    <button class="tab-button active" data-tab="meals">Meals</button>
+    <button class="tab-button" data-tab="combos">Combos</button>
+    <button class="tab-button" data-tab="beverages">Beverages</button>
+    <button class="tab-button" data-tab="desserts">Desserts</button>
+  </div>
+
+  <div class="carousel-wrapper" id="meals" style="display: block;">
+    <div class="meal-slider">
+      <div><img src="images/menu/meal/menuburger.gif" alt="Beef Burger" /></div>
+      <div><img src="images/menu/meal/menupizza.gif" alt="Pizza" /></div>
+      <div><img src="images/menu/meal/menuwings.gif" alt="Chicken Wings" /></div>
+      <div><img src="images/menu/meal/menuwrap.gif" alt="Wrap" /></div>
+    </div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+  <div class="carousel-wrapper" id="combos">
+    <div class="meal-slider">
+      <div><img src="images/menu/combos/menucombo1.gif" alt="Combo Meal 1" /></div>
+      <div><img src="images/menu/combos/menucombo2.gif" alt="Combo Meal 2" /></div>
+      <div><img src="images/menu/combos/menucombo3.gif" alt="Combo Meal 3" /></div>
+    </div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+  <div class="carousel-wrapper" id="beverages">
+    <div class="meal-slider">
+      <div><img src="images/menu/bevrages/menudrinkblack.gif" alt="Black Drink" /></div>
+      <div><img src="images/menu/bevrages/menudrinkorange.gif" alt="Orange Drink"/></div>
+      <div><img src="images/menu/bevrages/menudrinkpeach.gif" alt="Peach Drink" /></div>
+      <div><img src="images/menu/bevrages/menudrinkwhite.gif" alt="White Drink" /></div>
+    </div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+  <div class="carousel-wrapper" id="desserts">
+    <div class="meal-slider">
+      <div><img src="images/menu/desserts/menusweet1.gif" alt="Dessert 1" /></div>
+      <div><img src="images/menu/desserts/menusweet2.gif" alt="Dessert 2" /></div>
+      <div><img src="images/menu/desserts/menusweet3.gif" alt="Dessert 3" /></div>
+      <div><img src="images/menu/desserts/menusweet4.gif" alt="Dessert 4" /></div>
+    </div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+  <section class="footer-section">
+     <div class="footer-container">
+      <div class="footer-box">
+        <h3>Get news & offers</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" id="newsletter-email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <small>* We never send you spam!</small>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a>
+          <a href="https://www.whatsapp.com" target="_blank"><img src="images/icons/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Contacts</h3>
+        <p><strong>Location:</strong><br>Block 4, Clifton, Karachi, Pakistan</p>
+        <p><strong>Phone:</strong><br>+92 324 9221955  | +92 324 2026040</p>
+        <p><strong>Email:</strong><br>info@afoods.com</p>
+      </div>
+    </div>
+
+  <div class="toast-message" id="toast">Item added to cart</div>
+
+  <script src="cdn/jquery-3.6.0.min.js"></script>
+  <script src="cdn/slick.min.js"></script>
+  <script src="script.js"></script>
+ 
+</body>
+</html>

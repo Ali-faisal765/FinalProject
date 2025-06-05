@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservation - Afoods</title>
+  <link rel="icon" type="image/gif" href="images/logo/logo.gif">
+
+  <link rel="stylesheet" href="cdn/slick.min.css" />
+  <link rel="stylesheet" href="cdn/slick-theme.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  
+    <div id="loader">
+  <div class="loader-inner">
+    <img src="images/logo/logo.gif" alt="Loading..." />
+    <p>Cooking something delicious for you...</p>
+  </div>
+</div>
+
+
+  <div class="header-bar">
+    <div class="header-left">
+      <button><img src="images/icons/location.png" alt="Location Icon">Change Location</button>
+    </div>
+    <div class="logo-center">
+      <img src="images/logo/logo.gif" alt="Restaurant Logo">
+    </div>
+    <div class="header-right">
+      <a href="tel:+923121234567"><button><img src="images/icons/call.png" alt="Call Icon">Call Now</button></a>
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button id="searchButton"><img src="images/icons/search.png" alt="Search Icon" /></button>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reserve.html">Reserve Table</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="form-header">
+        <img src="images/logo/logo.gif" alt="Restaurant Logo">
+        <h2>Reserve Your Table</h2>
+      </div>
+      <form id="reservation-form">
+        <label>Name</label>
+        <div class="row">
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@example.com" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="(+92)" required>
+        <hr>
+        <label for="guests">Number of guests</label>
+        <select id="guests" required>
+          <option value="" disabled selected>Please Select</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5+">5 or more</option>
+        </select>
+        <label for="datetime">Reservation Date & Time</label>
+        <input type="datetime-local" id="datetime" required>
+        <label for="notes">Special Notes</label>
+        <textarea id="notes" rows="4" placeholder="Any special requests or notes..."></textarea>
+        <div style="text-align: center; margin-top: 20px;">
+          <button type="submit">Reserve</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>Get news & offers</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" id="newsletter-email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <small>* We never send you spam!</small>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a>
+          <a href="https://www.whatsapp.com" target="_blank"><img src="images/icons/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Contacts</h3>
+        <p><strong>Location:</strong><br>Block 4, Clifton, Karachi, Pakistan</p>
+        <p><strong>Phone:</strong><br>+92 324 9221955 | +92 324 2026040</p>
+        <p><strong>Email:</strong><br>info@afoods.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="cdn/jquery-3.6.0.min.js"></script>
+  <script src="cdn/slick.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
